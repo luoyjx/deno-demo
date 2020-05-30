@@ -1,6 +1,9 @@
 dev:
 	deno run --unstable --importmap=import_map.json --allow-net --reload server.ts
 
+fmt:
+	deno fmt
+
 build:
 	deno bundle --unstable --importmap=import_map.json server.ts server.js
 
